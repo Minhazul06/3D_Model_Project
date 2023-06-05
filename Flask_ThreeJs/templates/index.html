@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Model Loader</title>
+    <script src="https://rawgithub.com/mrdoob/three.js/r104/build/three.js"></script>
+    <script src="https://rawgithub.com/mrdoob/three.js/r104/examples/js/utils/BufferGeometryUtils.js"></script>
+
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+    ></script>
+    <!-- <script src="{{ url_for('static', filename='GLTFLoader.js') }}"></script>
+    <script src="{{ url_for('static', filename='OrbitControls.js') }}"></script> -->
+
+    <!-- <script
+      src="{{ url_for('static', filename='main.js') }}"
+      type="module"
+    ></script> -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <canvas class="webgl"></canvas>
+    <script type="module" src="../static/main.js"></script>
+  </body>
+</html>
